@@ -80,11 +80,7 @@ export default function Layout({
             <NavBar />
           </header>
           <Box m={8} />
-          <main>
-            <Grid container justifyContent="center">
-              {children}
-            </Grid>
-          </main>
+          <main>{children}</main>
           <Box m={8} />
           <Divider />
           <footer>
