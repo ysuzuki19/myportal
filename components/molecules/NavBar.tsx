@@ -20,8 +20,6 @@ const NavBar = (): JSX.Element => {
           {statics.title}
         </Typography>
 
-        <Divider orientation="vertical" flexItem variant="middle" />
-
         <Box style={{ flexGrow: 1, textAlign: 'center' }}>
           <Typography
             variant="h4"
