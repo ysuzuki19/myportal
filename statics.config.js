@@ -1,8 +1,7 @@
 const statics = {
   title: 'My Portal',
-  name: 'Yuya Suzuki',
+  name: 'YUYA SUZUKI',
   siteTitle: 'My Portal',
-  author: 'Yuya Suzuki',
   social: {
     twitter: 'ysuzuki191',
     github: 'ysuzuki19',

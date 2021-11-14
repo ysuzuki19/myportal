@@ -4,11 +4,13 @@ import { Fade, Typography } from '@mui/material';
 interface TextRotatorProps {
   keywords: string[];
   delay?: number;
+  interval?: number;
 }
 
 function TextRotator({
   keywords,
   delay = 1000,
+  interval = 100,
 }: TextRotatorProps): JSX.Element {
   const [counter, setCounter] = React.useState<number>(0);
   const [show, setShow] = React.useState<boolean>(true);
@@ -19,7 +21,7 @@ function TextRotator({
       setTimeout(() => {
         setCounter((prev) => (prev >= keywords.length - 1 ? 0 : prev + 1));
         setShow(true);
-      }, delay);
+      }, interval);
     }, delay);
     return () => {
       clearTimeout(timer);

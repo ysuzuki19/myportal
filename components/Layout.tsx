@@ -1,12 +1,12 @@
 import Head from 'next/head';
 import { Box, styled, ThemeProvider } from '@mui/system';
-import { createTheme, Divider, Grid } from '@mui/material';
+import { createTheme, Divider } from '@mui/material';
 
-import { Metas } from '../types/metas.types';
-import statics from '../statics.config';
-import defaultMetas from '../defaults/metas.default';
 import NavBar from './molecules/NavBar';
 import Footer from './molecules/Footer';
+import defaultMetas from '../defaults/metas.default';
+import { Metas } from '../types/metas.types';
+import statics from '../statics.config';
 
 interface LayoutProps {
   children: React.ReactNode;
